@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cricket Hand Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🏏 Cricket Hand Game</h1>
+
+        <div class="choices">
+            <button class="choice-btn" onclick="action_perform('Ball')">🏐 Ball</button>
+            <button class="choice-btn" onclick="action_perform('Bat')">🏏 Bat</button>
+            <button class="choice-btn" onclick="action_perform('Stamp')">🧤 Stamp</button>
+        </div>
+
+        <div class="status">
+            <p>You chose: <span id="yourchoice">-</span></p>
+            <p>Computer chose: <span id="comchoice">-</span></p>
+            <h2>Result: <span id="result">-</span></h2>
+        </div>
+
+        <div class="scoreboard">
+            <h3>📊 Scoreboard</h3>
+            <p>✅ Wins: <span id="win">0</span></p>
+            <p>❌ Lost: <span id="lost">0</span></p>
+            <p>🤝 Ties: <span id="tie">0</span></p>
+        </div>
+
+        <button class="reset-btn" onclick="resetScore()">🔄 Reset Score</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

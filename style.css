@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.choice-btn {
+    flex: 1;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    min-width: 90px;
+}
+
+.choice-btn:hover {
+    background-color: #45a049;
+}
+
+.status p,
+.status h2 {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.status h2 {
+    color: #007BFF;
+    font-size: 1.2rem;
+}
+
+.scoreboard {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.scoreboard h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.scoreboard p {
+    margin: 5px 0;
+}
+
+.reset-btn {
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.reset-btn:hover {
+    background-color: #d62828;
+}
+
+/* 📱 Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .choice-btn {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .status h2,
+    .scoreboard h3 {
+        font-size: 1rem;
+    }
+
+    .status p,
+    .scoreboard p {
+        font-size: 0.9rem;
+    }
+}
