@@ -25,29 +25,31 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #333;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .choices {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .choice-btn {
-    flex: 1;
+    flex: 1 1 30%;
     padding: 10px 0;
     font-size: 16px;
+    font-weight: 600;
     border: none;
     background-color: #4CAF50;
     color: white;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
     min-width: 90px;
 }
 
@@ -64,6 +66,7 @@ h1 {
 .status h2 {
     color: #007BFF;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .scoreboard {
@@ -78,10 +81,12 @@ h1 {
 .scoreboard h3 {
     margin-bottom: 10px;
     font-size: 1.1rem;
+    color: #333;
 }
 
 .scoreboard p {
-    margin: 5px 0;
+    margin: 6px 0;
+    font-weight: 500;
 }
 
 .reset-btn {
@@ -91,12 +96,22 @@ h1 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
     font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 .reset-btn:hover {
     background-color: #d62828;
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    letter-spacing: 0.4px;
 }
 
 /* 📱 Mobile Responsiveness */
@@ -111,7 +126,7 @@ h1 {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .status h2,
@@ -122,5 +137,14 @@ h1 {
     .status p,
     .scoreboard p {
         font-size: 0.9rem;
+    }
+
+    .reset-btn {
+        font-size: 0.95rem;
+        padding: 8px 16px;
+    }
+
+    .name {
+        font-size: 0.75rem;
     }
 }
